@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { useGetOrders } from "@/features/orders/hook/Ordershook";
-import { ArrowDownIcon, ArrowUpIcon, Loader } from "lucide-react";
+import { ArrowDownIcon, ArrowUpIcon, Loader, UserIcon } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Button } from "../ui/button";
@@ -89,7 +89,13 @@ const OrdersPage = () => {
 
                           <Separator />
                             
-                          
+                          <div className="flex items-start gap-3">
+                            <UserIcon className="mt-0.5 h-5 w-5 text-muted-foreground" />
+                            <div>
+                              <p className="text-sm font-medium">To</p>
+                              <p className="text-sm text-muted-foreground">VeloceVault Corporation.</p>
+                            </div>
+                          </div>
                       </DialogContent>
                     </Dialog>
                       <div className="ml-16">
