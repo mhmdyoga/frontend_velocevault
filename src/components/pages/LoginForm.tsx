@@ -89,7 +89,7 @@ const Micro5 = Micro_5({
                 <Input className='w-64' type="password" name="password" value={formData.password} onChange={handleChange} placeholder='JhonDoe123' />
              </div>
              <div className='flex flex-row gap-3 justify-center items-center'>
-               <button className='bg-[#111]  text-white font-bold text-sm rounded-lg w-[120px] h-[36px]'>Sign-in</button>
+               <button type='submit' className='bg-[#111]  text-white font-bold text-sm rounded-lg w-[120px] h-[36px]'>Sign-in</button>
                <div className='flex flex-col gap-2'>
                 <p className={`text-black font-semibold italic text-xs`}>{`Don't have an account?`}</p>
                 <Link href="/auth/register" className={`text-blue-700 font-semibold italic underline text-xs`}>Sign-up Now!</Link>

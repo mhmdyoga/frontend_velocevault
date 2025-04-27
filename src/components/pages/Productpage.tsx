@@ -40,7 +40,7 @@ const handleAddToCart = () => {
     <div className="ml-[320px] -mt-4">
       <Image src="/porsche-logo.png" alt="logo porsche company" width={60} height={60} className="w-auto h-auto p-2"/>
     </div>
-    <Image src={item.image} alt={item.title} width={300} height={200} className="w-auto h-auto object-cover rounded-lg mb-4" />
+    <Image src={item.image} alt={item.title} width={300} height={200} className="w-auto h-auto object-cover rounded-lg mb-4" priority/>
     <h2 className="text-xl font-semibold mb-2">{item.title}</h2>
     <p className="text-gray-600">{item.description}</p>
     <p className="text-gray-600">Price: ${item.price}</p>
